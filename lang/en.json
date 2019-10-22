@@ -870,5 +870,10 @@
     },
     "maintenance": {
         "down": "Down for Maintenance"
+    },
+    "also_bought": {
+        "heading": "Frequently bought together:",
+        "add_all": "Select all",
+        "add_selected_to_cart": "Add selected to cart"
     }
 }

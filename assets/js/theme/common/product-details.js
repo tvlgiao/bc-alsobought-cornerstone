@@ -54,6 +54,9 @@ export default class ProductDetails {
         $productOptionsElement.show();
 
         this.previewModal = modalFactory('#previewModal')[0];
+
+        // PapaThemes AlsoBought MOD
+        $('body').trigger('product-details-init', this);
     }
 
     /**

@@ -54,6 +54,11 @@ const pageClasses = {
 
 const customClasses = {};
 
+// PapaThemes AlsoBought MOD
+if (!window.jQueryTheme) {
+    window.jQueryTheme = $;
+}
+
 /**
  * This function gets added to the global window and then called
  * on page load with the current template loaded and JS Context passed in

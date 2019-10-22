@@ -53,6 +53,27 @@
             window.stencilBootstrap("{{page_type}}", {{jsContext}}).load();
         </script>
 
+        <script>
+            window.jQueryAlsoBought = window.jQueryTheme || window.jQuery;
+            // window.AlsoBoughtOptions = {
+            //     getScopeWithoutAlsoBought: function($scope) {
+            //         return $scope.children().not('[data-also-bought]');
+            //     },
+            //     renderAlsoBought: function(alsoBought) {
+            //         alsoBought.$alsoBoughtEl.appendTo(alsoBought.parentProductDetails.$scope);
+            //     }
+            // };
+            window.AlsoBoughtOptions = {
+                getScopeWithoutAlsoBought: function($scope) {
+                    return $scope.children().not('[data-also-bought]');
+                },
+                renderAlsoBought: function(alsoBought) {
+                    alsoBought.parentProductDetails.$scope.find('.productView-images').first().after(alsoBought.$alsoBoughtEl);
+                }
+            };
+        </script>
+        <script async src="//localhost:9000/alsobought.localhost_3000.js"></script>
+
         {{{footer.scripts}}}
     </body>
 </html>
