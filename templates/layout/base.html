@@ -64,6 +64,7 @@
             //     }
             // };
             window.AlsoBoughtOptions = {
+                independent: true,
                 getScopeWithoutAlsoBought: function($scope) {
                     return $scope.children().not('[data-also-bought]');
                 },
